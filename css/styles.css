@@ -573,6 +573,9 @@ progress {
   height: auto;
 }
 
+.img-responsive {
+    margin:0 auto;}
+
 .img-thumbnail {
   padding: 3.0rem;
   background-color: #fff;
@@ -10045,12 +10048,4 @@ footer a:hover, footer a:active, footer a:focus {
   text-align: center;
   margin: 2px;
   display: none; 
-}
-
-.underline--magical {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
 }
