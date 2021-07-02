@@ -25,7 +25,6 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -117,3 +116,8 @@ $(function(){
   }); 
   
 });
+
+$('#bologna-list a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})

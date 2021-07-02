@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>10AI</title>
+        <title>MITxHarvard WAI</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -17,6 +17,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -24,21 +28,30 @@
             <div class="container px-5">
                 <a class="navbar-brand fw-bold" href="#page-top">MITxHarvard Women In AI</a>
                 <a href="https://mitharvardwai.github.io/"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" href="index.html" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="interviews1.html">Expert Interview</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="interviews2.html">Young Scienctist Interview</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="https://iwanttobeatuna.github.io/Ai-4-daily-life/">Podcast</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#!">Our Sponsors</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Our Activities
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="https://youtube.com/playlist?list=PLHRV6sepviTkADNGvPA8upzKImbL9tEw1">Expert Interview Series</a>
+                              <a class="dropdown-item" href="https://youtube.com/playlist?list=PLHRV6sepviTlB3enIBrlRa_0bqqHnmXtY">Young Scienctist Interview Series</a>
+                              <a class="dropdown-item" href="https://iwanttobeatuna.github.io/Ai-4-daily-life/">10 AI Podcast</a>
+                            </div>
+                          </li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="resources.html">AI resources</a></li>
                     </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" >
+                    <button class="btn btn-dark rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" >
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
-                            <a href="#!"><span class="small text-white">Join Us</span></a>
+                            <a href="https://forms.gle/QCNsgucp4HgneJC58"><span class="small text-white">Join Us</span></a>
                         </span>
                     </button>
                 </div>
@@ -49,7 +62,7 @@
         <!-- Mashead header-->
         <header class="masthead">
             <div class="container px-5">
-                <div class="row gx-5 align-items-center">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
@@ -61,14 +74,14 @@
                         </div>
                     </div>
                     <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class='img-fluid' src="assets/img/rotating.gif" style="width: 100%; max-width: 100%; height: auto;"></div>
+                        <div class="px-5 px-sm-0"><img class='img-fluid' src="assets/img/8.gif" style="width: 100%; max-width: 100%; height: auto;"></div>
                     </div>
                 </div>
             </div>
         </header>
 
         <!-- About Us aside-->
-        <aside class="text-center bg-black" id = 'about'>
+        <aside class="text-center bg-black" id ='about'>
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-9">
@@ -81,43 +94,35 @@
 
             <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
                 <a class="btn btn-outline-light py-3 px-4 mt-4 mb-4 mx-3 rounded-pill" href="#activities" target="_self">Activities</a>
-                <a class="btn btn-outline-light py-3 px-4 mt-4 mb-4 mx-3 rounded-pill" href="#gp" target="_self">Guiding Principles</a>
+                <a class="btn btn-outline-light py-3 px-4 mt-4 mb-4 mx-3 rounded-pill" href="#about.html#gp" target="_self">Guiding Principles</a>
                 <a class="btn btn-outline-light py-3 px-4 mt-4 mb-4 mx-3 rounded-pill" href="about.html#team" target="_self">Team</a>
+                <a class="btn btn-outline-light py-3 px-4 mt-4 mb-4 mx-3 rounded-pill" href="about.html#team" target="_self">Join Us</a>
+            </div>
+        </aside>
+
+        <!-- Our sponsor-->
+        <aside class="text-center bg-black" id ='sponsor'>
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-6">
+                        <h2 class="display-4 lh-1 mb-5 text-center text-white">Sponsorship</h2>
+                        <p class="lead fw-normal text-white mb-5 mb-lg-0 card-text" >
+                            We thank our sponsors for their support and their commitment to promoting women in Artificial Intelligence. </p>
+                    </div>
+                    <div class="col-4">
+                        <img src="assets/img/mit.png" alt="" class="img-responsive mb-2" style="width: 120%; max-width: 120%; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                <a class="btn btn-outline-light py-3 px-4 mt-4 mb-4 mx-3 rounded-pill" href="#!" target="_self">All Sponsor</a>
+                <a class="btn btn-outline-light py-3 px-4 mt-4 mb-4 mx-3 rounded-pill" href="#!" target="_self">Become a sponsor</a>
+                <a class="btn btn-outline-light py-3 px-4 mt-4 mb-4 mx-3 rounded-pill" href="#!" target="_self">View our Prospectus</a>
             </div>
         </aside>
 
 
-        <!-- Guiding Principles section-->
-        <section class="bg-black" id="gp">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <h2 class="display-4 lh-1 mb-5 text-center text-white">Guiding Principles</h2>
-                    <div class="card-group">
-                        <div class="card text-white bg-black mb-3 mx-3">
-                        <img class="card-img-top" src="assets/img/1.gif" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Accessibility</h5>
-                            <p class="card-text text-center">Make machine learning and artificial intelligence more accessible, especially for those who are underrepresented in the field.</p>
-                        </div>
-                        </div>
-                        <div class="card text-white bg-black mb-3 mx-3">
-                        <img class="card-img-top" src="assets/img/2.gif" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Support</h5>
-                            <p class="card-text text-center">Create an environment safe from judgment, hostility, and competition.</p>
-                        </div>
-                        </div>
-                        <div class="card text-white bg-black mb-3 mx-3">
-                        <img class="card-img-top" src="assets/img/3.gif" alt="Card image cap" >
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Education</h5>
-                            <p class="card-text text-center">Learn more about ML and AI ourselves as well as educate others, especially beginners, by providing helpful resources and role models in the field.</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Activities section-->
         <section class="bg-black" id="activities">
@@ -133,36 +138,34 @@
                 <div class="row">
                     <div class="col-lg-4 mb-4">
                         <div class="card shadow p-3 rounded border-light bg-transparent text-center">
-                            <img src="assets/img/14.png" alt="" class="img-responsive mb-2" style="width: 60%; max-width: 60%; height: auto;">
+                            <img src="assets/img/12.png" alt="" class="img-responsive mb-2" style="width: 40%; max-width: 40%; height: auto;">
                             <div class="card-body">
                                 <h5 class="card-title text-center text-white">Expert Interview Series</h5>
                                 <p class="card-text text-center text-white">Interviews with outstanding women experts from all areas in the field</p>
                                 <div class="row align-items-center justify-content-center">
-                                <div class="col text-center mt-2 mx-1"><a href="" class="btn btn-outline-light btn-sm rounded-pill">Learn More</a></div>
-                                <div class="col text-center mt-2 mx-1"><a href="" class="btn btn-outline-light btn-sm rounded-pill">You Tube</a></div>
+                                <div class="col text-center mt-2 mx-1"><a href="https://youtube.com/playlist?list=PLHRV6sepviTkADNGvPA8upzKImbL9tEw1" class="btn btn-outline-light btn-sm rounded-pill">You Tube</a></div>
                             </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="card shadow p-3 rounded border-light bg-transparent">
-                            <img src="assets/img/13.png" alt="" class="img-responsive mb-2" style="width: 60%; max-width: 60%; height: auto;">
+                            <img src="assets/img/13.png" alt="" class="img-responsive mb-2" style="width: 40%; max-width: 40%; height: auto;">
                             <div class="card-body">
                                 <h5 class="card-title text-center text-white">Young Scientist Interview Series</h5>
                                 <p class="card-text text-center text-white">Interviews with outstanding young women scientists and engineers</p>
                                 <div class="row align-items-center justify-content-center">
-                                    <div class="col text-center mt-2 mx-1"><a href="" class="btn btn-outline-light btn-sm rounded-pill">Learn More</a></div>
-                                    <div class="col text-center mt-2 mx-1"><a href="" class="btn btn-outline-light btn-sm rounded-pill">You Tube</a></div>
+                                    <div class="col text-center mt-2 mx-1"><a href="https://youtube.com/playlist?list=PLHRV6sepviTlB3enIBrlRa_0bqqHnmXtY" class="btn btn-outline-light btn-sm rounded-pill">You Tube</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card shadow p-3 rounded border-light bg-transparent">
-                        <img src="assets/img/12.png" alt="" class="img-responsive mb-2" style="width: 60%; max-width: 60%; height: auto;">
+                        <img src="assets/img/14.png" alt="" class="img-responsive mb-2" style="width: 40%; max-width: 40%; height: auto;">
                         <div class="card-body">
                             <h5 class="card-title text-center text-white">10-AI Podcast</h5>
-                            <p class="card-text text-center text-white">10 minutes podcast with experts</p>
+                            <p class="card-text text-center text-white">10 minute podcasts with professionals that discusses practicum in AI in our daily life..</p>
                             <div class="col text-center mt-2"><a href="https://iwanttobeatuna.github.io/Ai-4-daily-life/" class="btn btn-outline-light btn-sm rounded-pill">Learn More</a></div>
                         </div>
                     </div>
@@ -215,10 +218,14 @@
                 </div>
             </div>
         </footer>
+        
         <!-- Bootstrap core JS-->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="jquery-3.5.1.min.js"></script> 
     </body>
 </html>
